@@ -37,7 +37,7 @@
 
         $(document).ready(function () {
             let name = findGetParameter("invitee");
-            name = name == null ? "여러분을" : name + "님을"
+            name = !name ? "여러분을" : name + "님을"
             $('#invitee').text(name);
         });
     </script>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <div class="my-3">
-                            <img alt="Launching Ceremony" class="img-fluid" src="images/church-image.jpg"/>
+                            <img alt="Launching Ceremony" class="img-fluid" src="images/prayers.jpg"/>
                         </div>
                     </div>
                 </div>
