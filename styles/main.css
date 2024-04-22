@@ -70,6 +70,13 @@ body {
     background-color: #fff;
 }
 
+ @font-face {
+    font-family: 'Deagwang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_03@1.0/Deagwang_mirror.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 [tabindex="-1"]:focus {
     outline: 0 !important;
@@ -578,9 +585,16 @@ pre code {
     margin-left: auto;
 }
 
+br.break-sm {
+    display: none;
+}
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+    br.break-sm{
+        display: inline;
     }
 }
 
@@ -588,17 +602,26 @@ pre code {
     .container {
         max-width: 720px;
     }
+    br.break-sm {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
+    br.break-sm {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+    br.break-sm {
+        display: none;
     }
 }
 
@@ -10028,6 +10051,10 @@ body {
 /* Common Style */
 .ww-title {
     font-family: "Great Vibes", cursive;
+}
+
+.ww-letter {
+    font-family: Deagwang;
 }
 
 .ww-section {
